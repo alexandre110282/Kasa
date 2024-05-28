@@ -1,0 +1,28 @@
+.card-list {
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 43px;
+    height: 829px;
+    max-width: 1240px;
+    overflow-y: auto;
+}
+
+@media (max-width: 1420px) {
+    .card-list {
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 890px) {
+    .card-list {
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+.card-list::-webkit-scrollbar {
+ width: 1px;}

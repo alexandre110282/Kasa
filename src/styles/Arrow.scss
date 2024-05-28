@@ -1,0 +1,9 @@
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.5s ease;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
