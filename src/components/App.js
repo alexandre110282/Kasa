@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {(window.location.pathname === '/' || window.location.pathname === '/a-propos') && <Banner key={window.location.pathname} image={bannerImage} showText={showText} />}
+      {(window.location.pathname === '/Kasa' || window.location.pathname === '/Kasa/a-propos') && <Banner key={window.location.pathname} image={bannerImage} showText={showText} />}
 
       <Routes>
         <Route path="/" element={<CardList />} />
