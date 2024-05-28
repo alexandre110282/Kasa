@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Kasa/static/css/main.507e2449.css",
-    "main.js": "/Kasa/static/js/main.17a05a45.js",
+    "main.js": "/Kasa/static/js/main.7782a803.js",
     "static/js/453.9701a2b0.chunk.js": "/Kasa/static/js/453.9701a2b0.chunk.js",
     "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/Kasa/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.abab3f12f4cb82f1dfa1.png",
     "static/media/IMG.png": "/Kasa/static/media/IMG.d00ae7dd3ef927bb988d.png",
     "static/media/LOGO.svg": "/Kasa/static/media/LOGO.d39d9d6d5a0de3bc9aa600b561742787.svg",
     "index.html": "/Kasa/index.html",
     "main.507e2449.css.map": "/Kasa/static/css/main.507e2449.css.map",
-    "main.17a05a45.js.map": "/Kasa/static/js/main.17a05a45.js.map",
+    "main.7782a803.js.map": "/Kasa/static/js/main.7782a803.js.map",
     "453.9701a2b0.chunk.js.map": "/Kasa/static/js/453.9701a2b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.507e2449.css",
-    "static/js/main.17a05a45.js"
+    "static/js/main.7782a803.js"
   ]
 }
