@@ -20,17 +20,32 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      {(window.location.pathname === '/Kasa' || window.location.pathname === '/Kasa/a-propos') && <Banner key={window.location.pathname} image={bannerImage} showText={showText} />}
-
-      <Routes>
-        <Route path="/" element={<CardList />} />
-        <Route path="/a-propos" element={<APropos />} />
-        <Route path="/fiche-logement/:logementId" element={<FicheLogements logements={cardData} />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-      <Footer />
-    </div>
+  <Routes>
+  <Route path="/" element={<>
+    <Header />
+    <Banner key={window.location.pathname} image={bannerImage} showText={showText} />
+    <CardList />
+    <Footer />
+  </>} />
+  <Route path="/a-propos" element={<>
+    <Header />
+    <Banner key={window.location.pathname} image={bannerImage} showText={showText} />
+    <APropos />
+    <Footer />
+  </>} />
+  <Route path="/fiche-logement/:logementId" element={<>
+    <Header />
+    <FicheLogements logements={cardData} />
+    <Footer />
+  </>} />
+  <Route path="*" element={<>
+    <Header />
+    <Error404 />
+    <Footer />
+  </>} />
+</Routes>
+  <Footer />
+</div>
   );
 }
 
