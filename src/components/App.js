@@ -18,35 +18,22 @@ function App() {
   const bannerImage =
     location.pathname === '/a-propos' ? BannerApropos : BannerApp;
 
-  return (
-    <div className="App">
-  <Routes>
-  <Route path="/" element={<>
-    <Header />
-    <Banner key={window.location.pathname} image={bannerImage} showText={showText} />
-    <CardList />
-    <Footer />
-  </>} />
-  <Route path="/a-propos" element={<>
-    <Header />
-    <Banner key={window.location.pathname} image={bannerImage} showText={showText} />
-    <APropos />
-    <Footer />
-  </>} />
-  <Route path="/fiche-logement/:logementId" element={<>
-    <Header />
-    <FicheLogements logements={cardData} />
-    <Footer />
-  </>} />
-  <Route path="*" element={<>
-    <Header />
-    <Error404 />
-    <Footer />
-  </>} />
-</Routes>
-  <Footer />
-</div>
-  );
-}
+  const isHomePage = window.location.pathname === '/Kasa' || window.location.pathname === '/Kasa/';
+const isAboutPage = window.location.pathname === '/Kasa/a-propos' || window.location.pathname === '/Kasa/a-propos/';
+const isCardListPage = window.location.pathname === '/Kasa' || window.location.pathname === '/Kasa/';
 
-export default App;
+return (
+  <div className="App">
+    <Header />
+    {(isHomePage || isAboutPage) && (isCardListPage || isAboutPage) && <Banner key={window.location.pathname} image={bannerImage} showText={showText} />}
+    <Routes>
+      <Route path="/" element={<CardList />} />
+      <Route path="/a-propos" element={<APropos />} />
+      <Route path="/fiche-logement/:logementId" element={<FicheLogements logements={cardData} />} />
+      <Route path="*" element={<Error404 />} />
+    </Routes>
+    <Footer />
+  </div>
+);
+}
+ export default App
