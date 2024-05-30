@@ -38,10 +38,11 @@
 }
 
 .bannerText {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 48px;
-  color: #FFFFFF;
+  color: chartreuse;
   position: absolute;
+  font-family: 'Courier New', Courier, monospace;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

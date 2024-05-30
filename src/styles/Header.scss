@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  width: 90vw;
+  flex-direction: column;
+  align-items: center;
   max-width: 1240px;
   margin: 40px 100px 38px 100px;
 
@@ -19,8 +19,7 @@
   }
 
   .logotype {
-    max-width: 210px;
-    width: 36vw;
+    width: 20rem;
   }
 
   .nav__list {
@@ -28,9 +27,10 @@
     flex-direction: row;
     list-style: none;
     gap: 30px;
-    font-family: Montserrat;
+    font-family: monospace;
     font-size: 24px;
     line-height: 142.6%;
+    padding: 0;
 
     li {
       cursor: default;
