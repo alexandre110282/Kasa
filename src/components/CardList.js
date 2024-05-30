@@ -1,13 +1,12 @@
-import React from 'react';
-import Card from './Card.js';
-import projetData from './listeProjets.json';
-import '../styles/CardList.scss'
+import Card from './Card';
+import '../styles/CardList.scss';
+import cardData from './listeLogement.json';
 
 function CardList() {
   return (
-    <div className="projet-list">
-      {projetData.map((projet) => (
-        <Card key={projet.id} projet={projet} />
+    <div className="card-list">
+      {cardData.map((card) => (
+        <Card key={card.id} title={card.title} image={card.cover} logement={card} />
       ))}
     </div>
   );

@@ -1,19 +1,18 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import "../styles/Card.scss"
+import '../styles/Card.scss'
 
-function Card({ projet }) {
-  const navigate = useNavigate();
+function Card({ title, image, logement }) {
+  const navigate = useNavigate(); // Utilisez useNavigate pour gérer la navigation
 
   const handleClick = () => {
-    window.open(projet.lien_github); // Redirige vers l'URL GitHub du projet
+    // Rediriger l'utilisateur vers la page FicheLogements.js avec l'ID du logement
+    navigate(`/fiche-logement/${logement.id}`);
   };
 
   return (
     <div className="card" onClick={handleClick}>
-      <img src={projet.image} alt={projet.nom} />
-      <div className="card-title">{projet.nom}</div>
-      <p>{projet.description}</p>
+      <img src={image} alt={title} />
+      <div className="card-title">{title}</div>
     </div>
   );
 }
